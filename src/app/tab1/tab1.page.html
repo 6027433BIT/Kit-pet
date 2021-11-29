@@ -1,0 +1,92 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="settings"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title
+      style="margin-left: 24.9%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+      News
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- post -->
+  <ion-list>
+    <ion-grid>
+      <ion-row>
+        <ion-buttons>
+          <ion-button>
+            <ion-icon name="person"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+
+        <ion-col style="margin-left: 20px;">
+          <div style="font-family: fantasy; ">User Name</div>
+        </ion-col>
+        <ion-buttons>
+          <ion-button>
+            <ion-icon name="chevron-down-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          Keep close to Nature's heart... and break clear away, once in awhile,
+          and climb a mountain or spend a week in the woods. Wash your spirit clean.
+        </ion-col>
+      </ion-row>
+      <ion-item>
+        <div slot="start">rate <ion-icon name="star"></ion-icon>
+        </div>
+        <div slot="end">comment <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+        </div>
+      </ion-item>
+    </ion-grid>
+  </ion-list>
+
+    
+      
+        <ion-list style="margin-top: 1.2%;">
+          <ion-item>
+          <ion-grid>
+            <ion-row>
+              <ion-buttons>
+                <ion-button>
+                  <ion-icon name="person"></ion-icon>
+                </ion-button>
+              </ion-buttons>
+      
+              <ion-col style="margin-left: 20px;">
+                <div style="font-family: fantasy; ">User Name</div>
+              </ion-col>
+              <ion-buttons>
+                <ion-button>
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </ion-button>
+              </ion-buttons>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <div> Keep close to Nature's heart... and break clear away, once in awhile,
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-item>
+              <div slot="start">rate <ion-icon name="star"></ion-icon>
+              </div>
+              <div slot="end">comment <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+              </div>
+            </ion-item>
+          </ion-grid>
+          </ion-item>
+        </ion-list>
+        <div style="margin-left: 35%; margin-top: 10%;">
+          <ion-button color="primary" shape="round" routerLink="/post">
+            Post
+          </ion-button>
+        </div>
+</ion-content>

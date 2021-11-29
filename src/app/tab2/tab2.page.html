@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="settings"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title
+      style="margin-left: 22.9%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+      Search
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<!-- 
+  <ion-list>
+    <ion-item *ngFor="let test of namepet" style="margin-top: 7px;">
+      <ion-img *ngFor="let pic of pics" src={{pics}} style="width: 40%;height: 40%;"></ion-img>
+      <ion-text style="margin-left: 10%; font-family: Verdana, Geneva, Tahoma, sans-serif;">{{test}}</ion-text>
+    </ion-item>
+  </ion-list> -->
+
+  <ion-grid>
+    <ion-list>
+      <ion-item *ngFor="let x of Pet.category">    
+        <ion-row>
+          <ion-col>
+              <ion-img src={{x.pics}} style="width: 100%;height: 100%;"></ion-img>
+          </ion-col>
+          <ion-col style="margin-left:">
+            <ion-text style="font-family: Verdana, Geneva, Tahoma, sans-serif;">{{x.namepet}}</ion-text>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+    </ion-list>
+  </ion-grid>
+
+</ion-content>
